@@ -10,7 +10,7 @@
     }, 500);
 })();
 
-function getColor(int num){
+function getColor(var num){
     var colors = [
       "#bceae2",
       "#a2d1d2",
