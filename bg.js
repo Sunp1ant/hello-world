@@ -1,4 +1,4 @@
-(function() {
+(function() { //self executing function on load of the html
     var num = 0;
     var mode;//false represent decrement, true represents increment
     
