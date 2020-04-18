@@ -1,16 +1,16 @@
 (function() {
     var bodyElement = document.getElementsByTagName("BODY")[0];
     var swap = false;
-    var color1 = '#000000';
-    var color2 = '#ffffff';
+    var color1 = '#80baf0';
+    var color2 = '#fffdf0';
 
     setInterval(function() {
         if (swap){
-            bodyElement.backgroundColor = c1;
-            bodyElement.color = c1;
+            bodyElement.backgroundColor = color1;
+            bodyElement.color = color1;
         } else {
-            bodyElement.backgroundColor = c2;
-            bodyElement.color = c2;
+            bodyElement.backgroundColor = color2;
+            bodyElement.color = color2;
         }
         swap = !swap
     }, 500);
