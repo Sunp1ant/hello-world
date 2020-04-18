@@ -1,5 +1,5 @@
 (function() {
-    var bodyElement = document.getElementsByTagName("BODY")[0];
+    var bodyElement = document.getElementsByTagName("BODY")[0].style;
     var swap = false;
     var color1 = '#80baf0';
     var color2 = '#fffdf0';
