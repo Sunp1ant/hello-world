@@ -1,14 +1,23 @@
 (function() {
-    var swap = false;
-    var color1 = '#80baf0';
-    var color2 = '#fffdf0';
-
+    var num = 0;
     setInterval(function() {
-        if (swap){
-            document.body.style.backgroundColor = color1;
+        document.body.style.backgroundColor = getColor(num);
+        if (num == 4) {
+            num--;
         } else {
-            document.body.style.backgroundColor = color2;
+            num++;
         }
-        swap = !swap
-    }, 1000);
+    }, 500);
 })();
+
+function getColor(int num){
+    var colors = [
+      "#bceae2",
+      "#a2d1d2",
+      "#8fc4cc",
+      "#69929a",
+      "#667e7e"
+    ];
+    
+    return colors[num];
+}
