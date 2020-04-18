@@ -13,5 +13,5 @@
             bodyElement.color = color2;
         }
         swap = !swap
-    }, 500);
+    }, 1000);
 })();
