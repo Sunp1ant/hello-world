@@ -1,9 +1,21 @@
+var theme;
+
 (function() { //self executing function on load of the html
     var num = 0;
     var mode;//false represent decrement, true represents increment
     
+    theme = 1;
+   
+    
     setInterval(function() {
-        document.body.style.backgroundColor = getColor(num);
+    	
+    	if (theme == 1) {
+        	document.body.style.backgroundColor = getColor(num);
+        } else {
+        	document.body.style.backgroundColor = getColor2(num);
+        }
+        
+        
         if (num == 4){
             mode = false;
         }
@@ -30,4 +42,25 @@ function getColor(num){
     ];
     
     return colors[num];
+}
+
+function getColor2(num){
+    var colors = [
+      "#fe7f9c",
+      "#ff69b4",
+      "#df5286",
+      "#fdab9f",
+      "#f987c5"
+    ];
+    
+    return colors[num];
+}
+
+
+function setTheme(){
+	if (theme == 1) {
+		theme = 2;
+	}else {
+		theme = 1;
+	}
 }
