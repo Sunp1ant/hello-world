@@ -1,12 +1,17 @@
 (function() {
-    var s = document.getElementById('titleTable').style,
-        f = false,
-        c1 = '#000000',
-        c2 = '#ffffff';
+    var bodyElement = document.getElementsByTagName("BODY")[0];
+    var swap = false;
+    var color1 = '#000000';
+    var color2 = '#ffffff';
 
     setInterval(function() {
-        s.backgroundColor = f ? c1 : c2;
-        s.color = f ? c2 : c1;
-        f = !f;
+        if (swap){
+            bodyElement.backgroundColor = c1;
+            bodyElement.color = c1;
+        } else {
+            bodyElement.backgroundColor = c2;
+            bodyElement.color = c2;
+        }
+        swap = !swap
     }, 500);
 })();
