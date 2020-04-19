@@ -8,5 +8,5 @@ h1, p {
 }
 
 body {
-  background-image: "bg2.jpeg";
+  background-image: url("bg2.jpeg");
 }
