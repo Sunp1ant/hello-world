@@ -1,9 +1,8 @@
 <html>
-
   <head>
     <!--<script src="bg.js"></script>!-->
     <!--<link rel="stylesheet" type="text/css" href="landing.css">-->
-	<link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>	
 	<style>
 		body{
 			background-color: #fffff4;
@@ -54,8 +53,39 @@
 	</style>
   </head>
   <body>
-	<div id="icon">ICON AREA</div>
-    <div id="topbanner">TITLE HERE</div>
+	<div id="icon">
+		<img id="logo" src="logo.png"></img>
+	</div>
+    <div id="topbanner">bbcreations.</div>
 	<div class="divider"></div>
+	<div id="welcome"></div>
+	<div id="appcontainer">
+		<div class="card">
+			<img src="try.gif" style="width:100%">
+			<div class="container">
+				<div class="row">
+					<div class="column"><h4><b>Date</b></h4></div>
+				</div>
+				<p>Description on the Application</p> 
+			</div>
+		</div>
+	</div>
+	<script>
+		var i = 0;
+		var txt = 'Welcome! We are two bbs creating new things for fun :)';
+		var speed = 100;
+
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("welcome").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+		
+		(function() {
+			typeWriter();
+		})()
+	</script>
   </body>
 </html>
