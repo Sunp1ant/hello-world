@@ -48,9 +48,12 @@
 
 /* Remove extra left and right margins, due to padding */
 .rowGrid {
-	margin: 0 -5px;
-	display: flex;
-	justify-content: center;
+  margin: 0 -5px;
+  display: flex;
+  justify-content: center;
+  max-height: 70%;
+  overflow: hidden;
+  padding-bottom: 5px;
 }
 
 /* Clear floats after the columns */
